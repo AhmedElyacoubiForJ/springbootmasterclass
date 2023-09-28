@@ -14,6 +14,7 @@ import java.util.List;
 // Service is also a component
 // but is more specific for the application structure
 // respectively architecture to annotate this class as a Service
+
 @Service
 public class CustomerService {
 
