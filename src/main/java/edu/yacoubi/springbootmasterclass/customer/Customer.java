@@ -1,6 +1,7 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Customer {
     private final Long id;
@@ -13,6 +14,7 @@ public class Customer {
         this.password = password;
     }
 
+    @JsonProperty("customer_id")
     public Long getId() {
         return id;
     }
