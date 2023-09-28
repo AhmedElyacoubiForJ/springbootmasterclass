@@ -11,7 +11,9 @@ public class CustomerService {
 
     private final CustomerRepositoryInterface repository;
 
-    public CustomerService(@Qualifier("fake") CustomerRepositoryInterface repository) {
+    public CustomerService(
+            //@Qualifier("fake")
+            CustomerRepositoryInterface repository) {
         this.repository = repository;
     }
 
