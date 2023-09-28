@@ -1,11 +1,12 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Arrays;
 import java.util.List;
 
-@Component(value = "fake")
+@Repository(value = "fake")
 public class CustomerRepositoryFakeImpl implements CustomerRepositoryInterface {
 
     @Override
