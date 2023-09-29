@@ -3,12 +3,16 @@ package edu.yacoubi.springbootmasterclass.customer;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.validation.constraints.NotBlank;
+
 public class Customer {
 
     private final Long id;
 
+    @NotBlank
     private final String name;
 
+    @NotBlank
     @JsonProperty(
             access = JsonProperty.Access.WRITE_ONLY
     )
