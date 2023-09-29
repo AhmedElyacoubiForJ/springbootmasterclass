@@ -37,7 +37,7 @@ public class CustomerControllerV2 {
     }
 
     @PutMapping
-    public void updateCustomer(@RequestBody Customer customer) {
+    public void updateCustomer(@Valid @RequestBody Customer customer) {
         System.out.println("UPDATE REQUEST...");
         System.out.println(customer);
     }

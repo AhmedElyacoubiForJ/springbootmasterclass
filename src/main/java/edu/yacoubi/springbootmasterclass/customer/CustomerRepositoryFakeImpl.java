@@ -9,8 +9,8 @@ public class CustomerRepositoryFakeImpl implements CustomerRepositoryInterface {
     @Override
     public List<Customer> getCustomers() {
         return Arrays.asList(
-                new Customer(1L, "James Bond", "password123"),
-                new Customer(2L, "Jamila Amigoscode", "123password")
+                new Customer(1L, "James Bond", "password123", "email@gmx.de"),
+                new Customer(2L, "Jamila Amigoscode", "123password", "email@gmx.de")
         );
     }
 }
