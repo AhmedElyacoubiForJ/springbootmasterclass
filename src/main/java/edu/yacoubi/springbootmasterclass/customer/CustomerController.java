@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping(path = "api/v1/customer")
+@RequestMapping(path = "api/v1/customers")
 @RestController
 @Deprecated
 public class CustomerController {
@@ -17,8 +17,8 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping(value = "all")
-    public List<Customer> getCustomer() {
+    @GetMapping
+    public List<Customer> getCustomers() {
         return customerService.getCustomers();
     }
 
