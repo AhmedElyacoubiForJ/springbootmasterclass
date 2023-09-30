@@ -4,3 +4,10 @@
 ### Spring Data reference documentation
 *  [Spring Data](https://spring.io/projects/spring-data)
 
+### Feign makes writing Java http clients easier
+*  [OpenFeign](https://github.com/OpenFeign/feign/blob/master/README.md)
+
+### Free fake API for testing and prototyping
+*  [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
+
+
