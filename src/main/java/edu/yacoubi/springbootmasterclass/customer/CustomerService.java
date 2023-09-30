@@ -1,5 +1,6 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
+import edu.yacoubi.springbootmasterclass.exception.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -36,7 +37,7 @@ public class CustomerService {
                 .filter(customer -> customer.getId().equals(id))
                 .findFirst()
                 .orElseThrow(
-                        () -> new IllegalStateException("customer with " + id + " not found")
+                        () -> new NotFoundException("customer with " + id + " not found")
                 );
     }
 }
