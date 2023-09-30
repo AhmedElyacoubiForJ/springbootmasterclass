@@ -10,10 +10,10 @@ import java.util.List;
 @Deprecated
 public class CustomerController {
 
-    private final CustomerService customerService;
+    private final CustomerServiceImpl customerService;
 
     @Autowired
-    public CustomerController(CustomerService customerService) {
+    public CustomerController(CustomerServiceImpl customerService) {
         this.customerService = customerService;
     }
 

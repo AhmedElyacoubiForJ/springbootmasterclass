@@ -21,8 +21,9 @@ public class CustomerRepositorySwitcherConfiguration {
     @Bean
     CustomerRepositoryInterface switchBetweenRepositories() {
         System.out.println("useCustomerRepositoryFakeImpl : " + useCustomerRepositoryFakeImpl);
-        return useCustomerRepositoryFakeImpl ?
-                new CustomerRepositoryFakeImpl() :
-                new CustomerRepositoryImpl();
+//        return useCustomerRepositoryFakeImpl ?
+//                new CustomerRepositoryFakeImpl() :
+//                new CustomerRepositoryImpl();
+        return new CustomerRepositoryFakeImpl();
     }
 }

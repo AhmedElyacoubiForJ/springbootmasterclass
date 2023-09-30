@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 @RestController
 public class CustomerControllerV2 {
 
-    private final CustomerService customerService;
+    private final CustomerServiceImpl customerService;
 
     @Autowired
-    public CustomerControllerV2(CustomerService customerService) {
+    public CustomerControllerV2(CustomerServiceImpl customerService) {
         this.customerService = customerService;
     }
 

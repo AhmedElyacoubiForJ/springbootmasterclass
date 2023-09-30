@@ -17,7 +17,8 @@ import java.util.List;
 // but is more specific for the application structure
 // respectively architecture to annotate this class as a Service
 
-@Service
+//@Service
+@Deprecated
 public class CustomerService {
 
     private final CustomerRepositoryInterface repository;
