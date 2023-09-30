@@ -1,5 +1,6 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
+import edu.yacoubi.springbootmasterclass.exception.ApiRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,6 +29,13 @@ public class CustomerControllerV2 {
     @GetMapping(path = "/{customerId}")
     public Customer getCustomer(@PathVariable("customerId") Long id) {
         return  customerService.getCustomer(id);
+    }
+
+    // to force an exception for fast testing purpose
+    @GetMapping(path = "/{customerId}/exception")
+    public Customer getCustomerException(@PathVariable("customerId") Long id) {
+        throw new ApiRequestException("ApiRequestException for customer " + id);
+        //return  customerService.getCustomer(id);
     }
 
     @PostMapping

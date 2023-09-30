@@ -23,7 +23,7 @@ public class ApiExceptionHandler {
 
         ApiExceptionDetails apiExceptionDetails = new ApiExceptionDetails(
                 e.getMessage(),
-                e.getCause(),
+                e,
                 HttpStatus.BAD_REQUEST,
                 ZonedDateTime.now()
         );
