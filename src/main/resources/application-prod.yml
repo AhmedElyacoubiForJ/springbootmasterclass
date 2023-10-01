@@ -1,0 +1,27 @@
+info.app.description=Master Spring Boot
+info.app.name=Spring Boot Master Class Course
+info.app.version=1.0.0
+info.company.name=edu.yacoubi
+
+management.endpoint.health.show-details=always
+management.endpoint.info.enabled=true
+management.endpoints.web.base-path=/manage
+management.endpoints.web.exposure.include=health,info,prometheus
+management.info.build.enabled=true
+management.info.env.enabled=true
+management.info.git.enabled=true
+management.info.java.enabled=true
+management.info.os.enabled=true
+server.error.include-binding-errors=always
+server.error.include-message=always
+server.error.include-stacktrace=never
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.password=hello
+spring.datasource.url=jdbc:h2:mem:testdb-dev-environment
+spring.datasource.username=hello
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-dev
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.show-sql=true
+spring.main.banner-mode=off
+spring.output.ansi.enabled=always
