@@ -14,4 +14,7 @@
 *  [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
 *  (https://docs.spring.io/spring-cloud-openfeign/reference/4.1/spring-cloud-openfeign.html)
 
+### Spring boot logging documentation
+* [Spring Boot Logging](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-logging.html)
+
 
