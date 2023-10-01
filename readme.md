@@ -24,11 +24,15 @@
 *  [Micrometer](https://micrometer.io/)
 *  [From metrics to insight](https://prometheus.io/)
 
-How to build the project through cmd without installing maven
-we use that one what in intellij
+How to build the project using cmd without installing maven
+we use that one what from intellij
 C:\Users\Ahmed\ay\code\springbootmasterclass>.\mvnw clean
 C:\Users\Ahmed\ay\code\springbootmasterclass>.\mvnw clean install
-C:\Users\Ahmed\ay\code\springbootmasterclass\target>java -jar springbootmasterclass-0.0.1-SNAPSHOT.jar
+C:\Users\Ahmed\ay\code\springbootmasterclass\target>
+java -jar springbootmasterclass-0.0.1-SNAPSHOT.jar
 
+running multiple application instances
+C:\Users\Ahmed\ay\code\springbootmasterclass\target>
+java -jar springbootmasterclass-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod --server.port=9090
 
 
