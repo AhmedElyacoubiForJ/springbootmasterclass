@@ -10,4 +10,7 @@
 ### Free fake API for testing and prototyping
 *  [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)
 
+### Spring Cloud OpenFeign documentation
+*  [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+
 
