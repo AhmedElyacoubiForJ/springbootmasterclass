@@ -10,7 +10,7 @@ import java.util.List;
         value = "jsonplaceholder",
         url = "https://jsonplaceholder.typicode.com/"
 )
-public interface JSONPlaceholderClientInterface {
+public interface JSONPlaceholderClient {
 
     @GetMapping("posts")
     List<Post> getPosts();
