@@ -17,4 +17,8 @@
 ### Spring boot logging documentation
 * [Spring Boot Logging](https://docs.spring.io/spring-boot/docs/2.1.13.RELEASE/reference/html/boot-features-logging.html)
 
+### Spring Boot Actuator Web API Documentation
+* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/actuator-api/htmlsingle/)
+
+
 
