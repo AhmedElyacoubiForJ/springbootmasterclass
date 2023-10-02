@@ -6,11 +6,11 @@ import org.springframework.http.HttpStatus;
 import java.time.ZonedDateTime;
 
 // what will the client receive
-@Data
-public class ApiExceptionDetails {
-
-    private final String message;
-    private final Throwable throwable;
-    private final HttpStatus status;
-    private final ZonedDateTime zonedDateTime;
+public record ApiExceptionDetails(
+        String message,
+        Throwable throwable,
+        HttpStatus status,
+        ZonedDateTime zonedDateTime) {
 }
+// private final, getter, public constructor, equals, hashcode
+// to string
