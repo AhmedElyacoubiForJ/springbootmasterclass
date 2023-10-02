@@ -1,6 +1,7 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
 import edu.yacoubi.springbootmasterclass.exception.ApiRequestException;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,14 +13,10 @@ import java.util.stream.Collectors;
 
 @RequestMapping(path = "api/v2/customers")
 @RestController
+@AllArgsConstructor
 public class CustomerControllerV2 {
 
     private final CustomerServiceImpl customerService;
-
-    @Autowired
-    public CustomerControllerV2(CustomerServiceImpl customerService) {
-        this.customerService = customerService;
-    }
 
     @GetMapping
     public List<Customer> getCustomers() {

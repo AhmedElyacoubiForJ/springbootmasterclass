@@ -1,6 +1,8 @@
 package edu.yacoubi.springbootmasterclass.customer;
 
 import edu.yacoubi.springbootmasterclass.exception.NotFoundException;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -8,20 +10,14 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
+@Slf4j
 public class CustomerServiceImpl {
-
-    private final static Logger LOGGER =
-            LoggerFactory.getLogger(CustomerServiceImpl.class);
 
     private final CustomerRepository repository;
 
-    public CustomerServiceImpl(
-            CustomerRepository repository) {
-        this.repository = repository;
-    }
-
     public List<Customer> getCustomers() {
-        LOGGER.info("getCustomers() was called");
+        log.info("getCustomers() was called");
         return repository.findAll();
     }
 
@@ -32,7 +28,7 @@ public class CustomerServiceImpl {
                             String message = "customer with " + id + " not found";
                             NotFoundException notFoundException =
                                     new NotFoundException(message);
-                            LOGGER.error("error in getting customer {}", id, notFoundException);
+                            log.error("error in getting customer {}", id, notFoundException);
                             return notFoundException;
                         }
                 );

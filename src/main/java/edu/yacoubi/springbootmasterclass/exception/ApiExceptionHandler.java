@@ -1,5 +1,6 @@
 package edu.yacoubi.springbootmasterclass.exception;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -15,10 +16,8 @@ import java.time.ZonedDateTime;
 // these annotation is the way specify
 // these class as global handler for the entire API
 @ControllerAdvice
+@Slf4j
 public class ApiExceptionHandler {
-
-    private static final Logger LOGGER =
-            LoggerFactory.getLogger(ApiExceptionHandler.class);
 
     // we can add more than one exception to be handled
     // @ExceptionHandler(value = {......})
